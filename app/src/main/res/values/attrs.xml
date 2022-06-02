@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RectangleView">
+        <attr name="radius" format="float" />
+        <attr name="borderWidth" format="float" />
+        <attr name="color" format="color" />
+    </declare-styleable>
+</resources>
