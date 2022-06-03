@@ -17,10 +17,7 @@ class RectangleView @JvmOverloads constructor(
     private var rectBorder: Float
     private var borderColor: Int
 
-    private val paint = Paint().apply {
-        isAntiAlias = true
-        style = Paint.Style.STROKE
-    }
+    private val paint = Paint()
 
     init {
 
@@ -44,13 +41,15 @@ class RectangleView @JvmOverloads constructor(
 
 
         canvas?.drawRoundRect(
-            0f,
-            0f,
-            width.toFloat(),
-            height.toFloat(),
+            0f + rectBorder / 2,
+            0f + rectBorder / 2,
+            width.toFloat() - rectBorder / 2,
+            height.toFloat() - rectBorder / 2,
             rectRadius,
             rectRadius,
             paint.apply {
+                isAntiAlias = true
+                style = Paint.Style.STROKE
                 strokeWidth = rectBorder
                 color = borderColor
             }

@@ -9,10 +9,12 @@
 
     <com.nikfen.customviewapplication.RectangleView
         android:id="@+id/rectangleView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="200sp"
+        android:layout_height="100sp"
         app:borderWidth="10sp"
         app:color="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:radius="100sp" />
