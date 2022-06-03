@@ -11,11 +11,11 @@
         android:id="@+id/rectangleView"
         android:layout_width="200dp"
         android:layout_height="100dp"
-        app:borderWidth="10sp"
+        app:borderWidth="10dp"
         app:color="@color/design_default_color_error"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:radius="100sp" />
+        app:radius="100dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
