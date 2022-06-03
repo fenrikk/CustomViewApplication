@@ -1,6 +1,7 @@
 package com.nikfen.customviewapplication
 
 import android.content.Context
+import android.content.res.Resources
 import android.graphics.Color
 import android.util.AttributeSet
 import android.widget.LinearLayout
@@ -19,7 +20,9 @@ class CustomLayout @JvmOverloads constructor(
             text = item
             layoutParams = LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT)
             textSize = 18f
-            setPadding(4)
+            setPadding(
+                (Resources.getSystem().displayMetrics.density * 4).toInt()
+            )
             setTextColor(Color.parseColor("#ffffff"))
             setBackgroundColor(Color.parseColor("#000000"))
         }

@@ -10,8 +10,5 @@ class MainActivity : AppCompatActivity() {
 
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        binding.layout.addItem("hellow")
-        binding.layout.addItem("Heew")
     }
 }
