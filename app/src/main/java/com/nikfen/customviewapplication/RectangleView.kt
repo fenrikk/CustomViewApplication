@@ -34,6 +34,13 @@ class RectangleView @JvmOverloads constructor(
                 recycle()
             }
         }
+        paint.apply {
+            isAntiAlias = true
+            style = Paint.Style.STROKE
+            strokeWidth = rectBorder
+            color = borderColor
+        }
+
     }
 
     override fun onDraw(canvas: Canvas?) {
@@ -47,12 +54,7 @@ class RectangleView @JvmOverloads constructor(
             height.toFloat() - rectBorder / 2,
             rectRadius,
             rectRadius,
-            paint.apply {
-                isAntiAlias = true
-                style = Paint.Style.STROKE
-                strokeWidth = rectBorder
-                color = borderColor
-            }
+            paint
         )
 
     }
