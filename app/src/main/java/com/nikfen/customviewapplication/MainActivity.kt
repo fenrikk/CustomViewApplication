@@ -7,7 +7,11 @@ import com.nikfen.customviewapplication.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.layout.addItem("hellow")
+        binding.layout.addItem("Heew")
     }
 }

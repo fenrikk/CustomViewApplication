@@ -25,8 +25,8 @@ class RectangleView @JvmOverloads constructor(
             0, 0
         ).apply {
             try {
-                rectRadius = getFloat(R.styleable.RectangleView_radius, 0f)
-                rectBorder = getFloat(R.styleable.RectangleView_borderWidth, 0f)
+                rectRadius = getDimension(R.styleable.RectangleView_radius, 0f)
+                rectBorder = getDimension(R.styleable.RectangleView_borderWidth, 0f)
                 borderColor = getColor(R.styleable.RectangleView_color, Color.BLACK)
             } finally {
                 recycle()
